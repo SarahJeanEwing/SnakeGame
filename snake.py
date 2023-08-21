@@ -28,9 +28,6 @@ class Snake:
     def extend(self):
         self.add_segment(self.segments[-1].position())
     def move(self):
-        # if self.segments[0].heading() = 0.0:
-        #     y = self.segments[0].ycor()
-        #     self.segments[0](y+20)
         for seg_num in range(len(self.segments) - 1, 0, -1):
             new_x = self.segments[seg_num - 1].xcor()
             new_y = self.segments[seg_num - 1].ycor()
